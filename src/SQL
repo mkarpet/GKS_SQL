@@ -1,0 +1,7 @@
+select users.login,products.name from users inner join responsibles on users.id=responsibles.iduser inner join projects on projects.id=responsibles.idproject inner join products on projects.id=products.idproject and (products.name='product2' or products.name='product5');
+
+
+select projects.project,products.name from projects left outer join products on projects.id=products.idproject;
+
+
+select projects.project,products.price from projects inner join products on products.price='0' and projects.id=products.idproject;
