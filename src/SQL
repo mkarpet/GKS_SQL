@@ -1,4 +1,4 @@
-select users.login,products.name from users inner join responsibles on users.id=responsibles.iduser inner join projects on projects.id=responsibles.idproject inner join products on projects.id=products.idproject and (products.name='product2' or products.name='product5');
+select users.login,products.name from users inner join responsibles on users.id=responsibles.iduser inner join projects on projects.id=responsibles.idproject inner join products on projects.id=products.idproject and (products.name='product2' or products.name='product5'); (честно взял у Булата, не додумался, но наверно можно и проще сделать его)
 
 
 select projects.project,products.name from projects left outer join products on projects.id=products.idproject;
